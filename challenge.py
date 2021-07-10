@@ -82,8 +82,7 @@ while not flag:
     try:
         num1 = int(input('>> number    | '))
         num2 = int(input('>> exponent  | '))
-        print()
-        print('\n', power_recursive(num1, num2), sep='')
+        print('\n\n', power_recursive(num1, num2), sep='')
         flag = True
 
     except ValueError:
@@ -101,5 +100,18 @@ while not flag:
 # Try doing it in a loop first, you may find that helpful.
 
 
-def factorial_recursive():
-    pass
+def factorial_recursive(n):
+    if n == 1:
+        return 1
+    else:
+        return n * factorial_recursive(n - 1)
+
+
+flag = False
+while not flag:
+    try:
+        num1 = int(input('>> n | '))
+        print('\n\n', f'{num1}! = {factorial_recursive(num1)}')
+
+    except ValueError:
+        print('>> please enter a number\n')

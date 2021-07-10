@@ -17,7 +17,9 @@
 #   deppe, elia
 #
 # ---- WRITE CODE BELOW ---- #
-
+first_name = input('>> first name... ')
+last_name = input('>> last name... ')
+print(last_name + ', ' + first_name + '\n')
 
 #   2. Pyramid
 #       a. Prompt input from the user in the form of a single character. Save to a variable named symbol.
@@ -34,7 +36,14 @@
 #   $
 #
 # ---- WRITE CODE BELOW ---- #
-
+symbol = input('>> symbol... ')
+print(
+    symbol + '\n' +
+    symbol * 2 + '\n' +
+    symbol * 3 + '\n' +
+    symbol * 2 + '\n' +
+    symbol + '\n'
+)
 
 #   3. Parallelogram
 #       a. Prompt input from the user in the form of a single character. Save to a variable named symbol.
@@ -53,7 +62,16 @@
 #      @
 #
 # ---- WRITE CODE BELOW ---- #
-
+symbol = input('>> symbol... ')
+print(
+    symbol + '\n' +
+    symbol * 2 + '\n' +
+    symbol * 3 + '\n' +
+    symbol * 4 + '\n' +
+    ' ' + symbol * 3 + '\n' +
+    ' ' * 2 + symbol * 2 + '\n' +
+    ' ' * 3 + symbol + '\n'
+)
 
 # -------------------- Section 2 -------------------- #
 
@@ -76,7 +94,17 @@
 #   num3 (float) | 21322.4
 #
 # ---- WRITE CODE BELOW ---- #
+num1 = input('>> num1... ')
+num2 = int(input('>> num2... '))
+num3 = int(input('>> num3... '))
 
+print(
+    '\n' +
+    f'num1 * 10 (str)   | {num1 * 10}' +
+    f'num2 * 10 (int)   | {num2 * 10}' +
+    f'num3 * 10 (float) | {num3 * 10}' +
+    '\n'
+)
 
 # Objectives:
 #   2. Diameter of a Circle
@@ -91,6 +119,13 @@
 #   diameter = 24.6
 #
 # ---- WRITE CODE BELOW ---- #
+num = float(input('>> radius... '))
+print(
+    '\n' +
+    f'>> radius   | {num}' +
+    f'>> diameter | {num * 2}' +
+    '\n'
+)
 
 
 # Objectives:
@@ -111,9 +146,14 @@
 #   area of the circle: 6134.4296
 #
 # ---- WRITE CODE BELOW ---- #
+def area_circle(radius):
+    return 3.14 * radius ** 2
 
 
-# -------------------- Section 4 -------------------- #
+num = float(input('>> radius... '))
+print(f'>> area of circle with radius {num} | {area_circle(num)}')
+
+# -------------------- Section 3 -------------------- #
 #
 # Create a conversation with a faux (fake) AI, using input and print().
 # See the example in example.py

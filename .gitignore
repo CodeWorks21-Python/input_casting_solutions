@@ -1,5 +1,7 @@
 .idea/
 
+demo.py
+
 # dotenv
 .env
 
